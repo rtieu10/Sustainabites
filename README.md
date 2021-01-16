@@ -18,7 +18,7 @@ This screen allows users to select and search ingredients that they already have
 </p> 
 
 ## Recipes Screen
-The recipes screen shows a list of recipes generated from the ingredients that the user selected on the previous screen. Users can tap on the heart icon in a specific cell to save the recipe to their favorites, or they can click on the cell itself to receive steps on how to prepare the meal. A filled heart next to the meal name indicates the meal is already saved in the users' favorites, and by tapping a filled heart, users can remove the recipe from their favorites. 
+The recipes screen shows a list of recipes generated from the ingredients that the user selected on the previous screen. Users can tap on an unfilled heart icon in a specific cell to save the recipe to their favorites, or they can click on the cell itself to receive steps on how to prepare the meal. A filled heart next to the meal name indicates the meal is already saved in the users' favorites, and by tapping a filled heart, users can remove the recipe from their favorites. 
 
 <img src="https://user-images.githubusercontent.com/40873892/104825131-e1c8ce80-5825-11eb-90a9-e5ec44a56a03.png" width="275">
 
