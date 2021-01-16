@@ -13,8 +13,8 @@ This screen allows users to save any recipes to their favorites. When users tap 
 This screen allows users to select and search ingredients that they already have in their refrigerator at home. The application will use the ingredients that the user has selected to generate recipes that uses those ingredients by calling the Spoonacular API. 
 
 <p float = "left">
-  <img src="https://user-images.githubusercontent.com/40873892/104825095-ad551280-5825-11eb-9027-9cb963206cf4.png" width="275">
-  <img src="https://user-images.githubusercontent.com/40873892/104825099-b645e400-5825-11eb-94e8-09f93cf555ec.png" width="275">
+  <img src="https://user-images.githubusercontent.com/40873892/104825116-c958b400-5825-11eb-801f-aa0f1f302acb.png" width="275">
+  <img src="https://user-images.githubusercontent.com/40873892/104825119-cd84d180-5825-11eb-83aa-5ef68695e101.png" width="275">
 </p>
 
 ## Recipes Screen
