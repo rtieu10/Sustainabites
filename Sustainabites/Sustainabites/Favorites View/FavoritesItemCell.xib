@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoritesItemCell" id="1eG-A0-bBS" customClass="FavoritesItemCell" customModule="Sustainabites" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1eG-A0-bBS" id="8C9-Ut-zQD">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Np-iK-yaZ">
+                        <rect key="frame" x="20" y="11" width="106" height="63"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="106" id="Hrb-bN-cdm"/>
+                            <constraint firstAttribute="height" priority="999" constant="63" id="cre-KR-Qzp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOr-jr-Gin">
+                        <rect key="frame" x="146" y="18" width="241" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oOr-jr-Gin" firstAttribute="top" secondItem="8C9-Ut-zQD" secondAttribute="top" constant="18" id="BRr-ig-01z"/>
+                    <constraint firstAttribute="bottom" secondItem="0Np-iK-yaZ" secondAttribute="bottom" constant="10" id="E7T-Rc-cgu"/>
+                    <constraint firstAttribute="trailing" secondItem="oOr-jr-Gin" secondAttribute="trailing" constant="46" id="Oze-ZV-AfB"/>
+                    <constraint firstItem="0Np-iK-yaZ" firstAttribute="top" secondItem="8C9-Ut-zQD" secondAttribute="top" constant="11" id="aGn-g0-fUr"/>
+                    <constraint firstItem="oOr-jr-Gin" firstAttribute="leading" secondItem="0Np-iK-yaZ" secondAttribute="trailing" constant="20" id="rf7-JK-rfN"/>
+                    <constraint firstItem="0Np-iK-yaZ" firstAttribute="leading" secondItem="8C9-Ut-zQD" secondAttribute="leading" constant="20" symbolic="YES" id="yJ9-fa-36O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="favoriteMealName" destination="oOr-jr-Gin" id="2cY-eT-zfh"/>
+                <outlet property="favoritesImageView" destination="0Np-iK-yaZ" id="XtV-i6-OYR"/>
+            </connections>
+            <point key="canvasLocation" x="0.7246376811594204" y="1.3392857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

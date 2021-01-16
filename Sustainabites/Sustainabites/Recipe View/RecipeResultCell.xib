@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeResultCell" rowHeight="84" id="nJo-b7-GRb" customClass="RecipeResultCell" customModule="Sustainabites" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nJo-b7-GRb" id="bb6-Ew-KYK">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lb4-dp-Bb0">
+                        <rect key="frame" x="20" y="11" width="106" height="63"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="63" id="4xB-4t-bFq"/>
+                            <constraint firstAttribute="width" constant="106" id="rH1-wU-EBS"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5L-WN-wDo">
+                        <rect key="frame" x="390" y="31" width="23" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Z4I-yo-KEO"/>
+                            <constraint firstAttribute="width" constant="23" id="hJl-ng-hjr"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="heart" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                        </state>
+                        <connections>
+                            <action selector="tapFavorite" destination="nJo-b7-GRb" eventType="touchUpInside" id="8ng-oy-IRy"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-gm-b6D">
+                        <rect key="frame" x="134" y="18" width="245" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="999" constant="245" id="QEm-YH-90m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x5L-WN-wDo" firstAttribute="leading" secondItem="Rh5-gm-b6D" secondAttribute="trailing" constant="11" id="APb-nk-cVv"/>
+                    <constraint firstItem="Lb4-dp-Bb0" firstAttribute="leading" secondItem="bb6-Ew-KYK" secondAttribute="leading" constant="20" symbolic="YES" id="Elg-PU-4ws"/>
+                    <constraint firstAttribute="bottom" secondItem="Lb4-dp-Bb0" secondAttribute="bottom" constant="10" id="QOt-Yz-jNc"/>
+                    <constraint firstItem="Rh5-gm-b6D" firstAttribute="leading" secondItem="Lb4-dp-Bb0" secondAttribute="trailing" constant="8" symbolic="YES" id="Umc-AH-rlH"/>
+                    <constraint firstAttribute="trailing" secondItem="x5L-WN-wDo" secondAttribute="trailing" constant="20" symbolic="YES" id="bsG-zu-9Fm"/>
+                    <constraint firstItem="Lb4-dp-Bb0" firstAttribute="top" secondItem="bb6-Ew-KYK" secondAttribute="top" priority="999" constant="11" id="cHY-Z6-dbZ"/>
+                    <constraint firstItem="Rh5-gm-b6D" firstAttribute="top" secondItem="bb6-Ew-KYK" secondAttribute="top" constant="18" id="krf-BO-Zu8"/>
+                    <constraint firstItem="x5L-WN-wDo" firstAttribute="leading" secondItem="Rh5-gm-b6D" secondAttribute="trailing" constant="11" id="ldt-aY-WSq"/>
+                    <constraint firstItem="x5L-WN-wDo" firstAttribute="top" secondItem="bb6-Ew-KYK" secondAttribute="top" constant="31" id="wZU-RE-Szx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="favoriteButton" destination="x5L-WN-wDo" id="Shf-8L-Hyg"/>
+                <outlet property="recipeImageView" destination="Lb4-dp-Bb0" id="1Q5-de-3ZL"/>
+                <outlet property="recipeNameLabel" destination="Rh5-gm-b6D" id="m6G-sn-n0a"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="104.46428571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
